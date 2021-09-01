@@ -88,7 +88,7 @@ img {
   display: flex;
 }
 
-/* Сброс стилей */
+/* ---Сброс стилей--- */
 
 .list {
   list-style: none;
@@ -400,8 +400,6 @@ img {
 }
 
 .socials-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--link-color);
 }
 
@@ -451,17 +449,22 @@ img {
 }
 
 .client-icon {
-  width: 106px;
-  height: 60px;
   fill: #afb1b8;
 }
 
-.client-list:hover,
-.client-list:focus {
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--secondary-text-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--secondary-text-color);
 }
 
 /* --------------Портфолио------------ */
+
+/* ---Портфолио фильтры--- */
 
 .portfolio {
   margin-right: auto;
@@ -497,9 +500,11 @@ img {
 .filtre-list:focus {
   color: var(--third-text-color);
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* ---Портфолио-Все--- */
+/* ---Портфолио-карточки--- */
 
 .content {
   display: flex;
@@ -514,6 +519,16 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.content-link {
+  display: block;
+}
+
+.content-link:hover,
+.content-link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .image {
@@ -641,7 +656,5 @@ img {
 }
 
 .join-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--third-text-color);
 }
